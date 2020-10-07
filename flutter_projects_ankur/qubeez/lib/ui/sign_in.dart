@@ -12,20 +12,23 @@ class _SigninScreen extends State<SigninScreen>{
   @override
   Widget build(BuildContext context) {
       return MaterialApp(
-        home: Scaffold(
+
+        home: Scaffold(extendBody: true,
           body:
 
-          Stack(
 
+          Stack(
             children: [
               Container(
-              child:Image.asset(
-                WELCOME_BACKGROUND_PATH, height: double.infinity, width: double.infinity,fit: BoxFit.fill,
+              child: Image.asset(
+                  WELCOME_BACKGROUND_PATH, width: double.infinity, height: double.infinity,fit: BoxFit.fill,
               ),
               ),
-              Column(
+              SingleChildScrollView(
+              child:Column(
 
                     children:[
+
                       Container(
                         //color:Colors.blue,
                         alignment: Alignment.centerLeft,
@@ -111,7 +114,7 @@ class _SigninScreen extends State<SigninScreen>{
                                   ),
                                   filled: true,
                                   fillColor: Colors.white,
-                                  enabledBorder: OutlineInputBorder(
+                                  border: OutlineInputBorder(
 
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(30.0)
@@ -159,7 +162,7 @@ class _SigninScreen extends State<SigninScreen>{
                                   ),
                                   filled: true,
                                   fillColor: Colors.white,
-                                  enabledBorder: OutlineInputBorder(
+                                  border: OutlineInputBorder(
 
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(30.0)
@@ -240,9 +243,12 @@ class _SigninScreen extends State<SigninScreen>{
                       ),
           ]
               )
+              )
             ],
+
           ),
           )
+
 
       );
   }
