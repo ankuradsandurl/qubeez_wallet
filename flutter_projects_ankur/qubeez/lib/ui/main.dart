@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:qubeez/welcome.dart';
+import 'package:qubeez/ui/welcome.dart';
+import 'package:qubeez/ui/sign_in.dart';
 
 void main() {
-  runApp(WelcomeQubeez());
+  runApp(SigninScreen());
 }
 
 class MyApp extends StatelessWidget {
