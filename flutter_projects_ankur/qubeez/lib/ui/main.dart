@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:qubeez/ui/sign_up.dart';
 import 'package:qubeez/ui/welcome.dart';
 import 'package:qubeez/ui/sign_in.dart';
 
+import 'otp.dart';
+
 void main() {
-  runApp(SigninScreen());
+  runApp(OTPScreen());
 }
 
 class MyApp extends StatelessWidget {

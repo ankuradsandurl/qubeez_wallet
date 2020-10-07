@@ -16,4 +16,6 @@ const NO_PADDING = 0.0;
 
 const FONT_SIZE_WELCOME = 26.0;
 const FONT_SIZE_MEDIUM = 18.0;
+const FONT_SIZE_LARGE = 20.0;
+
 const FONT_SIGNIN = 20.0;
