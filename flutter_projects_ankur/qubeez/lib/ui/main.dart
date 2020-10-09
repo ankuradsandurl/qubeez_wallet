@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:qubeez/ui/customer_support.dart';
 import 'package:qubeez/ui/home_screen.dart';
 import 'package:qubeez/ui/sign_up.dart';
 import 'package:qubeez/ui/splash_screen.dart';
+import 'package:qubeez/ui/transaction_screen.dart';
 import 'package:qubeez/ui/welcome.dart';
 import 'package:qubeez/ui/sign_in.dart';
 
 import 'otp.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(TransactionScreen());
 }
 
 class MyApp extends StatelessWidget {
@@ -33,7 +35,10 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: WelcomeQubeez(),
+        routes:<String, WidgetBuilder>{
+          '/WelcomQubeez' :   (BuildContext context) => new WelcomeQubeez()
+        }
     );
   }
 }

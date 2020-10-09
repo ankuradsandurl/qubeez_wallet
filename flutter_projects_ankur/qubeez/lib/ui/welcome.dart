@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qubeez/ui/sign_in.dart';
+import 'package:qubeez/ui/sign_up.dart';
 import 'package:qubeez/utils/dimen/dimen.dart';
 import 'package:qubeez/utils/ui.dart';
 
@@ -83,7 +85,7 @@ class WelcomeQubeez extends StatelessWidget{
                               child:RaisedButton(
 
                                elevation: 8.0,
-                               onPressed: ()=>null,
+                               onPressed: ()=> Navigator.push(context, MaterialPageRoute(builder: (context) => SignupScreen())),
                                color: Colors.white,
                                shape: RoundedRectangleBorder(
                                    borderRadius: BorderRadius.circular(22.0)
@@ -128,7 +130,7 @@ class WelcomeQubeez extends StatelessWidget{
                                   FlatButton(
                                     textColor: Colors.white,
                                     onPressed: () {
-
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => SigninScreen()));
                                     },
                                     child: Text("Sign in",
                                     style: TextStyle(

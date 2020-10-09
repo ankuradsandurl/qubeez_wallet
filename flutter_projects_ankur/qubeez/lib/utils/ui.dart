@@ -10,3 +10,7 @@ const MENU_ICON = "${BASE_DIR}menu_icon.png";
 const PAY_ICON = "${BASE_DIR}pay_icon.png";
 const ADD_MONEY_ICON = "${BASE_DIR}add_money_icon.png";
 const WALLET_ICON = "${BASE_DIR}wallet_icon.png";
+const CUSTOMER_SUPPORT = "${BASE_DIR}customer_support_img.png";
+const TRANSACTION_SUCCESSFUL_IMG = "${BASE_DIR}transaction_success.png";
+const TRANSACTION_SUCCESSFUL_QR_IMG = "${BASE_DIR}transaction_qr_code.png";
+const TRANSACTION_SUCCESSFUL_Q_WALLET_IMG = "${BASE_DIR}qbeez_wallet.png";
