@@ -6,3 +6,7 @@ const MANAGE_YOUR_EXPENSES  = "${BASE_DIR}manage_your_expenses.png";
 const ICON_SIGNUP = "${BASE_DIR}icon_ionic_md_log_in.png";
 
 const SIGNIN_BACKGROUND = "${BASE_DIR}signin_background.png";
+const MENU_ICON = "${BASE_DIR}menu_icon.png";
+const PAY_ICON = "${BASE_DIR}pay_icon.png";
+const ADD_MONEY_ICON = "${BASE_DIR}add_money_icon.png";
+const WALLET_ICON = "${BASE_DIR}wallet_icon.png";

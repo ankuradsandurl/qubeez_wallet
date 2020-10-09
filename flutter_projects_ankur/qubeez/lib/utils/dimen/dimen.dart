@@ -13,9 +13,12 @@ const PADDING_ALL_12 = 12.0;
 const PADDING_ALL_8 = 8.0;
 const NO_PADDING = 0.0;
 
+const MARGIN = 12.0;
 
 const FONT_SIZE_WELCOME = 26.0;
 const FONT_SIZE_MEDIUM = 18.0;
 const FONT_SIZE_LARGE = 20.0;
 
 const FONT_SIGNIN = 20.0;
+
+const APP_BAR_MARGIN = 80.0;
