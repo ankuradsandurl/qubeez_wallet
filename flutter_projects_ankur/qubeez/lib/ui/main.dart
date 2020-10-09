@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qubeez/ui/ScanScreen.dart';
 import 'package:qubeez/ui/home_screen.dart';
 import 'package:qubeez/ui/sign_up.dart';
 import 'package:qubeez/ui/splash_screen.dart';
@@ -8,7 +9,7 @@ import 'package:qubeez/ui/sign_in.dart';
 import 'otp.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: ScanScreen(),
     );
   }
 }

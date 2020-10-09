@@ -10,3 +10,4 @@ const MENU_ICON = "${BASE_DIR}menu_icon.png";
 const PAY_ICON = "${BASE_DIR}pay_icon.png";
 const ADD_MONEY_ICON = "${BASE_DIR}add_money_icon.png";
 const WALLET_ICON = "${BASE_DIR}wallet_icon.png";
+const BAR_CODE = "${BASE_DIR}bar_code.png";
