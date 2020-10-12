@@ -66,7 +66,7 @@ class _CustomerSupport extends State<CustomerSupport>{
                       margin: EdgeInsets.fromLTRB(LEFT_MARGIN+2, TOP_MARGIN_EXTRA,RIGHT_MARGIN+2,NO_MARGIN),
                       child: TextField(
                         style: TextStyle(
-                          fontSize: 18.0,
+                          fontSize: 19.0,
                           color: Color(HOME_APP_BAR_COLOR)
                         ),
                         decoration: InputDecoration(
