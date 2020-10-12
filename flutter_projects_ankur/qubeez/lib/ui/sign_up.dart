@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:qubeez/ui/otp.dart';
 import 'package:qubeez/utils/dimen/dimen.dart';
 import 'package:qubeez/utils/ui.dart';
 
 class SignupScreen extends StatefulWidget{
+
+  BuildContext prevContext;
+
+  SignupScreen(this.prevContext);
+
   @override
   _SignupScreen createState() => _SignupScreen();
 }
@@ -290,7 +296,7 @@ class _SignupScreen extends State<SignupScreen>{
                           child:RaisedButton(
 
                               elevation: 8.0,
-                              onPressed: ()=>null,
+                              onPressed: ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => OTPScreen())),
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(22.0)
@@ -298,7 +304,7 @@ class _SignupScreen extends State<SignupScreen>{
                               padding: EdgeInsets.fromLTRB(PADDING_ALL_16*2.0,PADDING_ALL_12, PADDING_ALL_16*2.0,PADDING_ALL_12),
 
                               child : Text(
-                                "Sign in",
+                                "Sign up",
                                 style: TextStyle(
                                     color: Colors.purpleAccent,
                                     fontSize: FONT_SIZE_MEDIUM

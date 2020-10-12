@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qubeez/ui/dashboard.dart';
+import 'package:qubeez/utils/custom_colors.dart';
 import 'package:qubeez/utils/dimen/dimen.dart';
 import 'package:qubeez/utils/ui.dart';
 
@@ -98,11 +100,11 @@ class _OTPScreen extends State<OTPScreen>{
                     decoration: InputDecoration(
                       fillColor: Colors.white,
                       filled: true,
-                      suffixIcon:Ink(
-                        decoration: ShapeDecoration(
+                      /*suffixIcon:InkWell(
+                        *//*decoration: ShapeDecoration(
                         color: Colors.red,
                         shape: CircleBorder()
-                        ),
+                        ),*//*
                         child: IconButton(
 
                         icon: Icon(
@@ -113,7 +115,7 @@ class _OTPScreen extends State<OTPScreen>{
                           onPressed: (){},
 
                       ) ,
-                    ),
+                    ),*/
 
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
@@ -126,7 +128,17 @@ class _OTPScreen extends State<OTPScreen>{
 
                   ),
 
-
+                Container(
+                  child: IconButton(
+                     splashRadius: 2.0,
+                    onPressed: ()=>Navigator.push(context,MaterialPageRoute(builder: (context) => Dashboard())),
+                     splashColor: Color(HOME_APP_BAR_COLOR),
+                     color: Color(HOME_APP_BAR_COLOR),
+                    icon: Icon(
+                      Icons.arrow_forward, color: Colors.white,
+                    ),
+                  ),
+                ),
                 Container(
                     alignment: Alignment.centerLeft,
                     margin: EdgeInsets.fromLTRB(LEFT_MARGIN,TOP_MARGIN_EXTRA, RIGHT_MARGIN, NO_MARGIN),

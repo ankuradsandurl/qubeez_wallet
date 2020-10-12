@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:qubeez/utils/custom_colors.dart';
 import 'package:qubeez/utils/dimen/dimen.dart';
 import 'package:qubeez/utils/str_app.dart';
@@ -159,7 +160,7 @@ class _TransactionScreen extends State<TransactionScreen>{
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(top: PADDING_ALL_16),
+                      padding: EdgeInsets.only(top: PADDING_ALL_12),
                     ),
                     Card(
                       elevation: 5.0,
@@ -214,6 +215,27 @@ class _TransactionScreen extends State<TransactionScreen>{
                           ],
                         ),
                       ),
+                    )
+                    ,
+                    Padding(
+                      padding: EdgeInsets.only(top: PADDING_ALL_16+6.0),
+                    ),
+
+                    Container(
+
+                      child: RaisedButton(
+                        elevation: 5.0,
+                        onPressed: ()=>null,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(18.0))
+                        ),
+                        padding: EdgeInsets.symmetric(vertical: PADDING_ALL_12, horizontal: PADDING_ALL_16*4.0),
+                        color: Color(HOME_APP_BAR_COLOR),
+                        child: Text("DONE",
+                        style: TextStyle(
+                          color: Colors.white
+                        ),),
+                      )
                     )
 
               ],

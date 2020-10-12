@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qubeez/utils/custom_colors.dart';
 import 'package:qubeez/utils/dimen/dimen.dart';
 import 'package:qubeez/utils/ui.dart';
 
@@ -206,9 +207,9 @@ class _SigninScreen extends State<SigninScreen>{
                           padding: EdgeInsets.fromLTRB(PADDING_ALL_16*2.0,PADDING_ALL_12, PADDING_ALL_16*2.0,PADDING_ALL_12),
 
                           child : Text(
-                                "Sign up",
+                                "Sign in",
                                 style: TextStyle(
-                                    color: Colors.purpleAccent,
+                                    color: Color(HOME_APP_BAR_COLOR),
                                     fontSize: FONT_SIZE_MEDIUM
                                 ),textAlign: TextAlign.center,
 

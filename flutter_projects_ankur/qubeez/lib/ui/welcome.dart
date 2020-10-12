@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:qubeez/ui/sign_in.dart';
 import 'package:qubeez/ui/sign_up.dart';
+import 'package:qubeez/utils/custom_colors.dart';
 import 'package:qubeez/utils/dimen/dimen.dart';
 import 'package:qubeez/utils/ui.dart';
 
-
-class WelcomeQubeez extends StatelessWidget{
+class WelcomeQubeez extends StatefulWidget{
+  @override
+  _WelcomeQubeez createState() => _WelcomeQubeez();
+}
+class _WelcomeQubeez extends State<WelcomeQubeez>{
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +89,7 @@ class WelcomeQubeez extends StatelessWidget{
                               child:RaisedButton(
 
                                elevation: 8.0,
-                               onPressed: ()=> Navigator.push(context, MaterialPageRoute(builder: (context) => SignupScreen())),
+                               onPressed: ()=> Navigator.push(context, MaterialPageRoute(builder: (context) => SignupScreen(context))),
                                color: Colors.white,
                                shape: RoundedRectangleBorder(
                                    borderRadius: BorderRadius.circular(22.0)
@@ -104,7 +108,7 @@ class WelcomeQubeez extends StatelessWidget{
                                      "Sign up",
 
                                      style: TextStyle(
-                                         color: Colors.purpleAccent,
+                                         color: Color(HOME_APP_BAR_COLOR),
                                          fontSize: FONT_SIZE_MEDIUM
                                      ),textAlign: TextAlign.center,
                                    )
